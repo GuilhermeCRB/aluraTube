@@ -7,6 +7,10 @@
   >
 </div>
 
+##  :clipboard: Descrição
+
+Projeto React utilizando Next.js que consiste numa versão personalizada do Youtube. Esse projeto foi realizado dentro da semana de Imersão React promovida pela Alura.
+
 ***
 
 ## :computer:	 Tecnologias e Conceitos
