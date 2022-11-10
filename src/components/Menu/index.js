@@ -1,11 +1,13 @@
 import { StyledMenu } from '../../style/Menu';
+import Search from './Search';
 
 export default function Menu() {
   return (
     <StyledMenu>
-      <div>
+      <div className="logo-div">
         <Logo />
       </div>
+      <Search />
     </StyledMenu>
   );
 }
