@@ -4,6 +4,7 @@ import { CSSReset } from '../src/style/CSSReset_index';
 import Menu from '../src/components/Menu';
 import Header from '../src/components/Header';
 import Timeline from '../src/components/Timeline';
+import Favorites from '../src/components/Favorites';
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
         <Menu />
         <Header config={config} />
         <Timeline playlists={config.playlists} />
+        <Favorites favorites={config.favorites} />
       </div>
     </>
   );
