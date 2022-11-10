@@ -1,5 +1,7 @@
 import config from '../config.json';
 
+import { useState } from 'react';
+
 import { CSSReset } from '../src/style/CSSReset_index';
 import Menu from '../src/components/Menu';
 import Header from '../src/components/Header';
@@ -7,6 +9,8 @@ import Timeline from '../src/components/Timeline';
 import Favorites from '../src/components/Favorites';
 
 export default function HomePage() {
+  const [valorDoFiltro, setValorDoFiltro] = useState('');
+
   return (
     <>
       <CSSReset />
@@ -17,9 +21,9 @@ export default function HomePage() {
           flex: 1,
         }}
       >
-        <Menu />
+        <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
         <Header config={config} />
-        <Timeline playlists={config.playlists} />
+        <Timeline searchValue={valorDoFiltro} playlists={config.playlists} />
         <Favorites favorites={config.favorites} />
       </div>
     </>

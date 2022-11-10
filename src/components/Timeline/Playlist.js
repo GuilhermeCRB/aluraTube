@@ -1,6 +1,6 @@
 import Video from './Video';
 
-export default function Playlist({ playlistName, videos }) {
+export default function Playlist({ searchValue, playlistName, videos }) {
   return (
     <section>
       <h2>{playlistName}</h2>

@@ -1,13 +1,13 @@
 import { StyledMenu } from '../../style/Menu';
 import Search from './Search';
 
-export default function Menu() {
+export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
   return (
     <StyledMenu>
       <div className="logo-div">
         <Logo />
       </div>
-      <Search />
+      <Search valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
     </StyledMenu>
   );
 }
