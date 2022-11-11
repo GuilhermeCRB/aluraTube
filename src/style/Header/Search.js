@@ -6,9 +6,15 @@ export const StyledSearch = styled.div`
   border: 1px solid ${({ theme }) => theme.borderBase};
   max-width: 425px;
   width: 100%;
+  height: 65%;
   margin: 0 auto;
-  border-radius: 2px;
+  border-radius: 10px;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 50%;
+    margin: 0 5% 0 50%;
+  }
 
   input {
     width: 80%;
@@ -25,11 +31,5 @@ export const StyledSearch = styled.div`
     background-color: ${({ theme }) => theme.backgroundLevel2};
     box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
     border-left: 1px solid ${({ theme }) => theme.borderBase};
-    width: 40px;
-    height: 40px;
-    @media (min-width: 600px) {
-      width: 64px;
-      height: 40px;
-    }
   }
 `;

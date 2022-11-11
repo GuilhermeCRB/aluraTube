@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import { StyledSearch } from '../../style/Header/Search';
 
 export default function Search({ valorDoFiltro, setValorDoFiltro }) {
