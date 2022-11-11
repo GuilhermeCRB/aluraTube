@@ -11,11 +11,6 @@ export const StyledSearch = styled.div`
   border-radius: 10px;
   overflow: hidden;
 
-  @media (max-width: 768px) {
-    width: 50%;
-    margin: 0 5% 0 50%;
-  }
-
   input {
     width: 80%;
     padding: 4px 6px;

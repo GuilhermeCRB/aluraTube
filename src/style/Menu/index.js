@@ -12,12 +12,9 @@ export const StyledMenu = styled.header`
   position: fixed;
   width: 100%;
   z-index: 1;
-  .logo-div {
-    position: absolute;
-    left: 15px;
-  }
   .logo {
     width: 100%;
+    min-width: 60px;
     max-width: 80px;
     @media (min-width: 600px) {
       max-width: 127px;

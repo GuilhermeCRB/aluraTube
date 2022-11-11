@@ -1,4 +1,4 @@
-import { StyledSearch } from '../../style/Header/Search';
+import { StyledSearch } from '../../style/Menu/Search';
 
 export default function Search({ valorDoFiltro, setValorDoFiltro }) {
   return (

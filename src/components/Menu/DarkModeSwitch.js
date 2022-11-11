@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { StyledSwitch } from '../../style/Header/StyledSwitch';
+import { StyledSwitch } from '../../style/Menu/StyledSwitch';
 import { ColorModeContext } from '../../contexts/ColorMode';
 
 export default function DarkModeSwitch() {
