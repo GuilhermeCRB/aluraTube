@@ -2,7 +2,6 @@ import config from '../config.json';
 
 import { useState } from 'react';
 
-import { CSSReset } from '../src/style/CSSReset_index';
 import Menu from '../src/components/Menu';
 import Header from '../src/components/Header';
 import Timeline from '../src/components/Timeline';
@@ -13,7 +12,6 @@ export default function HomePage() {
 
   return (
     <>
-      <CSSReset />
       <div
         style={{
           display: 'flex',
