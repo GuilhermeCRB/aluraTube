@@ -11,10 +11,10 @@ export const StyledMenu = styled.header`
   gap: 16px;
   position: fixed;
   width: 100%;
+  z-index: 1;
   .logo-div {
     position: absolute;
     left: 15px;
-    z-index: 2;
   }
   .logo {
     width: 100%;

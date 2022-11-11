@@ -6,6 +6,9 @@ export const CSSReset = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    ::-webkit-scrollbar {
+    display: none;
+}
   }
   body {
     font-family: sans-serif;
