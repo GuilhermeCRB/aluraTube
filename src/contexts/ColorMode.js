@@ -2,9 +2,6 @@ import { createContext, useState } from 'react';
 
 export const ColorModeContext = createContext({
   mode: '',
-  setMode: () => {
-    alert('Você precisa me configurar primeiro!');
-  },
   toggleMode: () => {
     alert('Você precisa me configurar primeiro!');
   },
