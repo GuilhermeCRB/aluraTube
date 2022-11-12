@@ -7,6 +7,10 @@ export default function RegisterVideo() {
   const formCadastro = useForm({ initialValues: { titulo: '', url: '' } });
   const [formVisivel, setFormVisivel] = useState(false);
 
+  function getThumbnail(url) {
+    return `https://img.youtube.com/vi/${url.split('v=')[1]}/hqdefault.jpg`;
+  }
+
   return (
     <StyledRegisterVideo>
       <button className="add-video" onClick={() => setFormVisivel(true)}>
